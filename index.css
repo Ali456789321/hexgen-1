@@ -1,0 +1,136 @@
+html,
+body {
+    background: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.swiper-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.swiper {
+    width: 550px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .swiper-container {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .swiper {
+        width: 85%;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(229, 141, 243) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(97, 10, 118) !important;
+}
+
+.swiper-slide {
+    background-color: rgb(23, 2, 41);
+    border-radius: 10px;
+}
+
+.swiper-padding {
+    padding: 20px 15px;
+}
+
+.img-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-flex .logo {
+    width: 80px;
+    height: 30px;
+}
+
+.img-flex .person {
+    border-bottom-left-radius: 100%;
+    width: 70px;
+}
+
+.swiper-padding h3 {
+    color: white;
+    font-weight: normal;
+    transition: 1s;
+}
+
+.swiper-padding h2 {
+    color: white;
+    margin: 0;
+}
+
+.swiper-padding h4 {
+    color: white;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.swiper-padding svg {
+    width: 17px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 150ms;
+    rotate: 50deg;
+    transition: 1s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* Initial state */
+}
+
+.swiper-padding .svg-rot {
+    rotate: 0deg;
+}
+
+.swiper-padding .svgs path {
+    fill: rgb(229, 141, 243);
+}
+
+.grid {
+    display: grid;
+}
+
+h1 {
+    font-size: 50px;
+    background: linear-gradient(45deg, #7b48b5, #f2f0f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
